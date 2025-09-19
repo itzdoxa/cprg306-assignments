@@ -3,13 +3,12 @@ import Link from "next/link";
 const StudentInfo = () => {
   return (
     <div>
-      <h1>Student Information</h1>
-      <p>Deepinder Singh</p>
+      <p>Name: Deepinder Singh</p>
       <p>
-        GitHub Repo:{" "}
+        GitHub:{" "}
         <Link
-          href=""
-        >
+          href="https://github.com/itzdoxa/cprg306-assignments" target="_blank"
+        >itzdoxa/cprg306-assignments
         </Link>
       </p>
     </div>
