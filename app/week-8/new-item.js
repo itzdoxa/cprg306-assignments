@@ -69,7 +69,7 @@ export default function NewItem({ onAddItem }) {
             className={`w-10 h-10 flex items-center justify-center rounded-md font-bold text-lg ${
               quantity === 1
                 ? "bg-gray-700 text-gray-500 cursor-not-allowed"
-                : "bg-gray-600 hover:bg-gray-500 text-white"
+                : "bg-gray-600 hover:bg-gray-700 text-white"
             }`}
           >
             –
@@ -86,7 +86,7 @@ export default function NewItem({ onAddItem }) {
             className={`w-10 h-10 flex items-center justify-center rounded-md font-bold text-lg ${
               quantity === 20
                 ? "bg-gray-700 text-gray-500 cursor-not-allowed"
-                : "bg-blue-500 hover:bg-blue-600 text-white"
+                : "bg-blue-500 hover:bg-blue-800 text-white"
             }`}
           >
             +

@@ -49,7 +49,7 @@ export default function LandingPage() {
             </Link>
             <button
               onClick={handleLogout}
-              className="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-md font-medium"
+              className="bg-red-500 hover:bg-red-700 px-5 py-2 rounded-md font-medium"
             >
               Sign Out
             </button>

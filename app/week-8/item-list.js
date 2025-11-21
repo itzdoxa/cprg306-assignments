@@ -13,15 +13,16 @@ export default function ItemList({ items, onItemSelect }) {
     if (sortBy === "category") {
       return a.category.localeCompare(b.category);
     }
+    return 0;
   });
 
   return (
     <div>
-      <div className="flex gap-4 mb-4">
+      <div role="group" aria-label="Sort options" className="flex gap-4 mb-4">
         <button
           onClick={() => setSortBy("name")}
-          className={`px-4 py-2 rounded ${
-            sortBy === "name" ? "bg-blue-600 text-white" : "bg-gray-600"
+          className={`px-4 py-2 rounded transition-colors ${
+            sortBy === "name" ? "bg-blue-600 text-white hover:bg-blue-800" : "bg-gray-600 hover:bg-gray-700"
           }`}
         >
           Sort by Name
@@ -29,8 +30,8 @@ export default function ItemList({ items, onItemSelect }) {
 
         <button
           onClick={() => setSortBy("category")}
-          className={`px-4 py-2 rounded ${
-            sortBy === "category" ? "bg-blue-600 text-white" : "bg-gray-600"
+          className={`px-4 py-2 rounded transition-colors  ${
+            sortBy === "category" ? "bg-blue-600 text-white hover:bg-blue-800" : "bg-gray-600 hover:bg-gray-700"
           }`}
         >
           Sort by Category
